@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>Portfolo Project</title>
+</head>
+<body>
+    <section class="hero">
+        <div>
+            <h1>Hi! I'm Dawar Abbas</h1>
+            <h2>Web developer & software engineering student</h2>
+            <p>I create fast, responsive websites with clean UI and interactive features.</p>
+            <a href="#contact" class="clickMe">Contact me</a>
+        </div>
+        
+
+    </section>
+    <section class="about-section" id="about">
+        <div class="abot-container">
+            <div class="section-image">
+                <img src="./assets/images/ProfilePic.jpg" alt="Dawar Abbas ProfilePic">
+
+            </div>
+            <div class="about-text hidden">
+                <h2>About Me</h2>
+                <p>
+                    I'm Dawar Abbas, a passionate web developer and a software engineering student. 
+                    I love creating beautiful, responsive websites with clean code, great UI, and interactive features. 
+                    I enjoy turning ideas into real-world digital products that people love to use.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--Now lets add the skills section-->
+    <section class="skills-section" id="skills">
+        <h2>My Skills</h2>
+        <div class="skill">
+            <span>C++</span>
+            <div class="Skills-bar">
+                <div class="skill-fill" data-width="95%"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <span>C#</span>
+            <div class="Skills-bar">
+                <div class="skill-fill" data-width="90%"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <span>Web Development</span>
+            <div class="Skills-bar">
+                <div class="skill-fill" data-width="60%"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <span>Python</span>
+            <div class="Skills-bar">
+                <div class="skill-fill" data-width="50%"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="project-section" id="Project">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+
+            <div class="project-card" data-modal="modal1">
+            <img src="./assets/images/Tin-Dog.png" alt="Project 1">
+            <h3>Tin-Dog Website</h3>
+            </div>
+
+            <div class="project-card" data-modal="modal2">
+            <img src="./assets/images/Drum-kits.png" alt="Project 2">
+            <h3>Drum-kits App</h3>
+        </div>
+
+        <div class="modal" id="modal1">
+            <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Tin-Dog Website</h3>
+            <p>A responsive Tin Dog website built using HTML, CSS, and Bootsrap.</p>
+            </div>
+        </div>
+
+    <!-- Modal 2 -->
+    <div class="modal" id="modal2">
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Drum-kits App</h3>
+        <p>A dynamic app for beats and music production using HTML,CSS and Js.</p>
+        </div>
+    </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form" novalidate>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your Name">
+                <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Your Email">
+                <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Your Message"></textarea>
+                <small class="error-message"></small>
+            </div>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./javaScript/index.js" charset="utf-8"></script>
+</body>
+        <footer class="site-footer">
+            <p>&copy; 2025 Dawar Abbas. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/Dawar30" target="_blank" aria-label="GitHub">
+                    <img src="./assets/icons/Git-Hub-logo.png" alt="GitHub">
+                    <b class="fab fa-github">GitHub</b>
+                </a>
+                <a href="https://linkedin.com/in/dawar-abbas-252311331" target="_blank" aria-label="LinkedIn">
+                    <img src="./assets/icons/Linkedin-logo.png" alt="LinkedIn">
+                    <b class="fab fa-linkedin">LinkedIn</b>
+                </a>
+            </div>
+        </footer>
+
+</html>
